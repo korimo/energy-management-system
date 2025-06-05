@@ -31,11 +31,17 @@ docker-compose up --build
 ```
 
 ## ✅ Endpoints
-- `GET /sites/` – user's sites
+- `GET /sites/` – list user's sites
+- `GET /sites/{site_id}` – get site
 - `POST /devices/site/{site_id}` – create device
-- `GET /metrics/device/{device_id}/latest` – latest metric
+- `GET /devices/{device_id}` – get device
+- `PUT /devices/{device_id}` – update device
+- `DELETE /devices/{device_id}` – remove device
+- `GET /metrics/{metrics_id}/latest` – get latest mesurement
+- `GET /metrics/{metrics_id}` – get metric history
+- `GET /subscriptions` – list subscription
 - `POST /subscriptions` – create subscription
-- `GET /subscriptions/{id}/timeseries` – mock history
+- `PUT /subscriptions/{subscription_id}/assign/{metric_id}` – assign metric
 
 ## 📁 Project Structure
 ```
