@@ -43,7 +43,7 @@ docker-compose up --build
 - `POST /subscriptions` – create subscription
 - `PUT /subscriptions/{subscription_id}/assign/{metric_id}` – assign metric
 
-## 📁 Project Structure
+## 📁 Project root is src its  Structure is
 ```
 main.py
 routers/
@@ -55,7 +55,12 @@ tests/
     test_sites.py
 ```
 
+
 ## 📌 Notes
 - No real auth, roles are mocked
 - Time-series is mock
 - SQLite DB is local file
+- see the documentation in doc directory especially
+-- energy_management_stacklayout.odt
+-- openapi.json
+
